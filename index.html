@@ -18,8 +18,9 @@ function readText (form) {
     alert (TestVar + ", you are not as " + Smart + " as you think!");
 }
 function writeText (form) {
-    form.inputbox.value = "Sarah, Have a nice day!"; 
+    
     alert("Good girl!");
+    alert("You just wished Sarah a good day!");
 }
 </SCRIPT>
 </HEAD>
@@ -44,8 +45,8 @@ What is your favourite colour:
 <INPUT TYPE="text" NAME="ColourBox" placeholder="Purple"><P>
 
 
-			<INPUT TYPE="button" NAME="button1" Value="Click on the link here"
-				onClick="readText(this.form)" onmouseover=".. and I will tell you how you are doing"> <INPUT TYPE="button" NAME="button2" Value="Wish Sarah" onClick="writeText(this.form)">
+			<INPUT TYPE="button" NAME="button1" Value="Click here now"
+				onClick="readText(this.form)" > <INPUT TYPE="button" NAME="button2" Value="Wish Sarah" onClick="writeText(this.form)">
 </FORM>
 
 </BODY>
