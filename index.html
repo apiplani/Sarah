@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="SarahCSS.css">
+<TITLE>Sarah's personal Website'</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function readText (form) {
+   var TestVar =form.inputbox.value;
+    var Smart , i =0;
+    do {
+    	if(form.Smartbox[i].checked)
+    		break;
+    	else 
+    		i++;
+    }while (1==1)
+   
+   
+    Smart = form.Smartbox[i].value; 
+    alert (TestVar + ", you are not as " + Smart + " as you think!");
+}
+function writeText (form) {
+    form.inputbox.value = "Sarah, Have a nice day!"; 
+    alert("Good girl!");
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1> Let us play a small game - Shall we?</h1> <p>
+
+<FORM NAME="myform" ACTION="" METHOD="GET">
+Ok. Tell me your name: 
+<INPUT TYPE="text" NAME="inputbox" placeholder="Sarah"><P>
+Are you <b>Dumb</b> or <b>Smart</b>: 
+<INPUT TYPE="radio" NAME="Smartbox" VALUE="Ok"> OK
+<INPUT TYPE="radio" NAME="Smartbox" VALUE="Smart" checked> Smart
+<INPUT TYPE="radio" NAME="Smartbox" VALUE="Dumb" > Dumb<P>
+What is your favourite colour: 
+<INPUT TYPE="text" NAME="ColourBox" placeholder="Purple"><P>
+<INPUT TYPE="text" NAME="ColourBox" placeholder="Purple"><P>
+
+<INPUT TYPE="button" NAME="button1" Value="Check how are you doing" onClick="readText(this.form)">
+<INPUT TYPE="button" NAME="button2" Value="Wish Sarah" onClick="writeText(this.form)">
+</FORM>
+
+</BODY>
+</HTML>
